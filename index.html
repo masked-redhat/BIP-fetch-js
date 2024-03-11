@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.webp" type="image/x-icon" />
+    <title>Bitcoin Price Index (BPI)</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <article id="chart">
+      <header>
+        <h1 id="chartName">Bitcoin</h1>
+        <p>last updated <span id="updated"></span></p>
+      </header>
+      <section>
+        <p>
+          value in <span id="code"></span>
+          <span
+            ><span id="symbol">$</span><span id="rate"></span></span
+          >
+        </p>
+        <button id="reload">reload</button>
+      </section>
+      <footer>
+        <p>
+          Disclaimer:
+          <span id="disclaimer"
+            >This data was produced from the CoinDesk Bitcoin Price Index (USD).
+            Non-USD currency data converted using hourly conversion rate from
+            openexchangerates.org</span
+          >
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
